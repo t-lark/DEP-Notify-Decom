@@ -16,14 +16,14 @@ import os
 
 # positional parameters
 
-# this will be the path of what you are wanting to tag
+# this will be the path of what you are wanting to tag, example: /Applications/Firefox.app
 TAGPATH = sys.argv[4]
 # meta data tag, i.e. the name of the tag you want to use for searching for the apps you have installed
 # examples:  InstalledByJamf, InstalledByCompany, AcmeApp, etc.
 TAGNAME = sys.argv[5]
 # name of the removal tag, i.e. RemovalMethod, Uninstall, etc
 REMOVETAG = sys.argv[6]
-# uninstall method, i.e. jamf policy manual event trigger, or just delete it
+# uninstall method, i.e. jamf policy manual event trigger, or just delete it, use delete if you want it to be deleted
 REMOVAL = sys.argv[7]
 
 # start functions
