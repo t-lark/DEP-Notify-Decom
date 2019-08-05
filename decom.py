@@ -115,6 +115,9 @@ def remove_apps(appdict):
         name = k
         path = appdict[k]['path']
         removal = appdict[k]['method']
+        # check if we are skipping this app, i.e. it is FOSS and you don't care
+        if removal == 'skip':
+            pass
         # check if we are manually deleting the item
         if removal == 'delete':
             write_to_dnlog('Status: Removing %s' % name)
